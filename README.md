@@ -37,7 +37,17 @@ Esboço da interface: usando a interface gráfica do LabVIEW, foi criado um esbo
 
 <img src="Imagens/interface_20grafica.jpeg.jpg " width="500">
 
-No programa, a interface irá enviar os dados de constantes PID e velocidade para determinada roda. Com o comando enviado, a placa irá enviar o comando de pwm para o módulo de motor para o motor executar determinada velocidade. O encoder irá medir a velocidade da roda e a placa executará o controle PID com as constantes definidas pelo LabView. O controle PID funciona da seguinte forma:
+No programa, a interface irá enviar os dados de constantes PID e velocidade para determinada roda. Conforme está no programa da commands.cpp, o comando funciona da seguinte forma:
+
+argcg = igual ao número de argumentos que é enviado para o programa. No que que o primeiro argumento deve ser "[A".
+
+arcg==1: enviar pra porta serial os valores atuais de kp ki e kd
+argc==2: se o segundo argumento for M1, enviar pra portal serial a velocidade atual da roda do motor M1, se for M0...
+argc==3: o segundo argumento vai ser "M1" ou "M0" e o terceiro, o valor de velocidade q deve ser enviado pro respectivo motor
+argc==4: os argumentos 2, 3 e 4 devem ser kp ki e kd, respectivamente
+
+
+Com o comando enviado, a placa irá enviar o comando de pwm para o módulo de motor para o motor executar determinada velocidade. O encoder irá medir a velocidade da roda e a placa executará o controle PID com as constantes definidas pelo LabView. O controle PID funciona da seguinte forma:
 
 <img src="Imagens/Diagrama.PNG " width="500">
 
@@ -52,7 +62,6 @@ E o código que executa isso é o seguinte:
 			speed_saida_1 = pwm_m1*1000;
 
 			pwm_m1=-pwm_m1;
-
 
 O código foi implementado na seguinte interface, mas o teste não foi filmado:
 
