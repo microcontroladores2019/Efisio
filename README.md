@@ -39,7 +39,7 @@ Esboço da interface: usando a interface gráfica do LabVIEW, foi criado um esbo
 
 No programa, a interface irá enviar os dados de constantes PID e velocidade para determinada roda. Conforme está no programa da commands.cpp, o comando funciona da seguinte forma:
 
-argcg = igual ao número de argumentos que é enviado para o programa. No que que o primeiro argumento deve ser "[A".
+arcg = igual ao número de argumentos que é enviado para o programa. No que que o primeiro argumento deve ser "[A".
 
 arcg==1: enviar pra porta serial os valores atuais de kp ki e kd
 
