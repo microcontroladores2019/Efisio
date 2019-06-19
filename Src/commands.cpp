@@ -2,6 +2,8 @@
 
 extern CommandLine cmdline;
 
+//variaveis que ir√£o ser usadas na main.cpp
+
 extern int estado;
 extern int speed_saida_0;
 extern int speed_saida_1;
@@ -98,7 +100,7 @@ estado=1;
 //		if(Mx=='0'){
 //
 //					           desired_speed0 = atoi((char*)argv8[1]);
-//					           //desired_speed1=0; - caso o usu·rio queira que a outra roda pare
+//					           //desired_speed1=0; - caso o usu√°rio queira que a outra roda pare
 //
 //					       //	size+=sprintf(buffer+size, "%d %d\r\n", speed_saida_0,speed_usb_0);
 //
@@ -107,7 +109,7 @@ estado=1;
 //				else if(Mx=='1') {
 //
 //					                  desired_speed1 = atoi((char*)argv8[1]);
-//									 //desired_speed0=0; - caso o usu·rio queira que a outra roda pare
+//									 //desired_speed0=0; - caso o usu√°rio queira que a outra roda pare
 //					          //		size+=sprintf(buffer+size, "%d %d\r\n", speed_saida_1,speed_usb_1);
 
 		desired_speed0 = atoi((char*)argv8[1]);
