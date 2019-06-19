@@ -9,7 +9,7 @@ usuário pode extimar as constantes PID do motor.
 
 Fluxograma da Eletrônica:
 
-<img src="Imagens/Diagrama_Eletronico.PNG" width="500">
+<img src="Imagens/Diagrama_Eletronico.PNG" width="800">
 
 Fluxograma:
 
