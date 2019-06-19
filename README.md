@@ -42,8 +42,11 @@ No programa, a interface irá enviar os dados de constantes PID e velocidade par
 argcg = igual ao número de argumentos que é enviado para o programa. No que que o primeiro argumento deve ser "[A".
 
 arcg==1: enviar pra porta serial os valores atuais de kp ki e kd
-argc==2: se o segundo argumento for M1, enviar pra portal serial a velocidade atual da roda do motor M1, se for M0...
+
+argc==2: se o segundo argumento for M1, enviar pra portal serial a velocidade atual da roda do motor M1, se for M0
+
 argc==3: o segundo argumento vai ser "M1" ou "M0" e o terceiro, o valor de velocidade q deve ser enviado pro respectivo motor
+
 argc==4: os argumentos 2, 3 e 4 devem ser kp ki e kd, respectivamente
 
 
